@@ -7,7 +7,7 @@ from pathlib import Path
 figures_dir = Path('reports/figures')
 figures_dir.mkdir(parents=True, exist_ok=True)
 
-# Load the cleaned and processed data (ensure the correct path is specified)
+# Load the cleaned and processed data
 data_path = Path('data/processed/dosunmu_cleaned_stats.csv')
 df = pd.read_csv(data_path)
 
