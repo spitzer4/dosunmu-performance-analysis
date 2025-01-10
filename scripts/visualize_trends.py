@@ -22,17 +22,6 @@ try:
 	plt.grid()
 	plt.savefig("reports/figures/points_over_time.png")
 	plt.show()
-	
-	# Step 3: Plot trends by Home/Away
-	plt.figure(figsize=(12, 6))
-	sns.lineplot(x='Date', y='PTS', hue='Home/Away', data=ayo_stats_df, marker='o')
-	plt.title("Ayo Dosunmu: Points Scored Over Time (Home vs Away)")
-	plt.ylabel("Points")
-	plt.xlabel("Date")
-	plt.xticks(rotation=45)
-	plt.grid()
-	plt.savefig("reports/figures/points_trend_home_vs_away.png")
-	plt.show()
 
 except Exception as e:
 	print(f"An error occurred during visualization: {e}")
