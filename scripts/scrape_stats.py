@@ -4,7 +4,7 @@ import pandas as pd
 
 # --- Scrape and extract data ---
 # Define the URL
-url = "https://www.basketball-reference.com/teams/CHI/2025_games.html"
+url = "https://www.basketball-reference.com/teams/CHI/2024_games.html"
 
 # Send a request and parse the HTML
 response = requests.get(url)
@@ -38,7 +38,7 @@ games_df.to_csv('data/raw/chicago_bulls_game_stats.csv', index=False)
 
 # --- Filter to Dosunmu's data ---
 # Update the URL to Dosunmu's game logs
-url = "https://www.basketball-reference.com/players/d/dosunay01/gamelog/2025"
+url = "https://www.basketball-reference.com/players/d/dosunay01/gamelog/2024"
 
 # Request and parse the page
 response = requests.get(url)
